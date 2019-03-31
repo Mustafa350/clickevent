@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"> </script>
+<style>
+
+
+.renkekle{
+  color:blue;
+
+}
+</style>
+
+  </head>
+  <body>
+      <p id="jq1">Jquery Öğreniyroum</p>
+      <p id="jq2">Jquery Öğreniyroum</p>
+      <p class="prg">Jquery Öğreniyroum</p>
+      <p class="prg">Jquery Öğreniyroum</p>
+
+  <button type="button" class="but">Renk Ekle</button>
+  <button type="button" class="remov">Renk Kaldır</button>
+
+
+
+<script type="text/javascript">
+
+
+
+ $(document).ready(function(){
+   $("#jq1").click(function(){
+     alert("p1 çalışıyor agam");
+   });
+ });
+
+$(document).ready(function(){
+  $(".but").click(function(){
+    $('#jq1').addClass("renkekle");
+  })
+});
+$(document).ready(function(){
+  $(".remov").click(function(){
+    $("#jq1").removeClass("renkekle");
+  })
+});
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
